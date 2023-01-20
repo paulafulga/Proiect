@@ -1,53 +1,68 @@
-
 <?php
-include("config.php");
-include("navigationbar.php");
-if(isset($_SESSION['email'])){
-    header("Location: index.php");
-}
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if(isset($_POST['email']) && isset($_POST['password'])){
     $email = $_POST['email'];
     $password = $_POST['password'];
-    if(empty($email) || empty($password)){
-        echo "Nu lasa campuri goale";
-    }else{
+
+    if(filter_var($email, FILTER_VALIDATE_EMAIL) && strlen($password) >= 8){
+        //connect to database
         $servername = "localhost";
         $username = "root";
         $password = "";
         $dbname = "proiect";
+
+        //create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
 
+        //check connection
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
-        $query = "SELECT * FROM client WHERE email = '$email' LIMIT 1";
-         $result = mysqli_query($conn,$query);
-        $row = mysqli_fetch_assoc($result,MYSQLI_ASSOC);
-  
-        $count = mysqli_num_rows($result);
-  
-  // If result matched $myusername and $mypassword, table row must be 1 row
-    
-  if($count == 1) {
-     $_SESSION['login_user'] = $email;
-        $_SESSION['login_user'] = $password;
-     header("location: indexAfter.php");
-  }else {
-     $error = "Your Login Name or Password is invalid";
-     echo "Email/parola incorecta";
-  }
+
+        //prepare and bind
+        $stmt = $conn->prepare("SELECT email, password FROM users WHERE email = ?");
+        $stmt->bind_param("s", $email);
+
+        //set parameters and execute
+        $stmt->execute();
+
+        $result = $stmt->get_result();
+
+        if($result->num_rows == 1) {
+            $row = $result->fetch_assoc();
+            if(password_verify($password, $row['password'])) {
+                //password is correct, start a new session
+                session_start();
+                //store email in session
+                $_SESSION['email'] = $email;
+                //redirect to welcome page
+                header("Location: welcome.php");
+                exit;
+            } else {
+                echo "Invalid email or password";
+            }
+        } else {
+            echo "Invalid email or password";
+        }
+        $stmt->close();
+        $conn->close();
+    }
+    else{
+        //invalid email or password
+        echo "Invalid email or password";
     }
 }
 ?>
+
 
 <!DOCTYPE html>
 <html>
 <head>
 <title>Login</title>
+<link rel="stylesheet" type="text/css" href="login1.css">
 </head>
 <body>
 
-<form action="login.php" method="post">
+<form action="index.php" method="post">
   Email:<br>
   <input type="email" name="email" required>
   <br>
