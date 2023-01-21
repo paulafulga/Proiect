@@ -1,5 +1,5 @@
 .contact-info {
-    background-color: #e5ecc8; /* Set the background color of the contact-info */
+    background-color: #eff1e7; /* Set the background color of the contact-info */
     padding: 10px; /* Add some padding to the contact-info */
     display: flex; /* Display the contact-info as a flex container */
     align-items: center; /* Center the contact-info items vertically */
@@ -10,7 +10,7 @@
   }
 
   nav {
-    background-color: #e0eb52; /* Set the background color of the navbar */
+    background-color: #f0edcc; /* Set the background color of the navbar */
     padding: 10px; /* Add some padding to the navbar */
     display: flex; /* Display the navbar as a flex container */
     align-items: center; /* Center the navbar items vertically */
@@ -27,7 +27,7 @@
   }
   
   nav ul li a {
-    color: #fff; /* Set the text color of the links */
+    color: rgb(0, 0, 0); /* Set the text color of the links */
     text-decoration: none; /* Remove the underline from the links */
     font-size: 20px; /* Increase the font size of the links */
   }
@@ -35,3 +35,19 @@
   nav ul li a:hover {
     color: #717171; /* Change the text color of the links on hover */
   }
+
+  input[type=button] {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input[type=button]:hover {
+    background-color: #3e8e41; /* Green */
+}

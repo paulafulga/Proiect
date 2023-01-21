@@ -27,3 +27,18 @@ p {
     margin-top: 10px;
 }
 
+input[type=button] {
+    background-color: #e2d516; /* Green */
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input[type=button]:hover {
+    background-color: #e4e66e; /* Green */
+}

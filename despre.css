@@ -1,0 +1,38 @@
+table {
+    width: 80%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    background-color: rgb(202, 243, 179); 
+}
+
+td {
+    padding: 20px;
+    vertical-align: top;
+}
+
+td img {
+    width: 40%;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+td p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+td h2 {
+    font-size: 24px;
+    margin-top: 30px;
+}
+h1 {
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: rgb(241, 221, 108);
+    text-align: center;
+}
+body{
+    background-color: rgb(235, 245, 212);
+}

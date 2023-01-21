@@ -6,6 +6,9 @@
       <td>
         <h3>Lapte</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod dolor vel magna ullamcorper, vel malesuada nibh hendrerit. </p>
+        <form>
+        <input type="button" value="Vezi detalii" onclick="location.href='produse.php';">
+        </form>
       </td>
     </tr>
     <tr>
@@ -13,6 +16,9 @@
       <td>
         <h3>Branzeturi</h3>
         <p>Sed euismod, leo id suscipit euismod, mi nibh faucibus augue, vel auctor velit orci eget neque. </p>
+        <form>
+        <input type="button" value="Vezi detalii" onclick="location.href='produse.php';">
+        </form>
       </td>
     </tr>
     <tr>
@@ -30,6 +36,9 @@
       <td>
         <h3>Gem si Dulceata</h3>
         <p>Nunc auctor, urna vel bibendum viverra, augue ipsum tincidunt elit, eget bibendum nisl nisl eget nisi. </p>
+        <form>
+        <input type="button" value="Vezi detalii" onclick="location.href='produse.php';">
+        </form>
       </td>
     </tr>
   </table>

@@ -1,0 +1,81 @@
+.sectiune-contact {
+    width: 80%;
+    margin: 60px auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sectiune-contact h1 {
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+}
+
+p{
+    font-size:15px;
+}
+
+.info-contact {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.info-contact div {
+    width: 100%;
+}
+
+.info-contact h2 {
+    color: rgb(2, 2, 2);
+    margin-bottom: 10px;
+}
+
+.map {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.contact-form input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin-bottom: 20px
+}
+body
+{
+    background-color: rgb(222, 236, 182);
+}
