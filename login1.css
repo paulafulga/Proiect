@@ -40,6 +40,7 @@ input[type='submit'] {
     background-color: #e2ce1d;
     color: white;
     padding: 14px 20px;
+    align-self: center;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
@@ -47,9 +48,26 @@ input[type='submit'] {
 }
 
 input[type='submit']:hover {
-    background-color: #cec222;
+    background-color: #89eb8e;
 }
 
 .error {
     color: red;
 }
+
+button {
+    background-color: #fbffc9; /* Set the background color of the button */
+    color: rgb(0, 0, 0); /* Set the text color */
+    padding: 14px 20px; /* Add some padding to the button */
+    margin: 8px 0; /* Add some margin to the button */
+    border: none; /* Remove the border */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    width: 100%; /* Make the button take the full width of its container */
+    font-size: 20px; /* Increase the font size of the text */
+    text-align: center; /* Center the text inside the button */
+    transition: background-color 0.3s ease; /* Add a transition effect when the background color changes */
+  }
+  
+  button:hover {
+    background-color: #ecffed; /* Change the background color on hover */
+  }

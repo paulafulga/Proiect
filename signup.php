@@ -2,20 +2,21 @@
 <html>
 <head>
 <title>Sign Up</title>
+<link rel="stylesheet" type="text/css" href="signup.css">
 </head>
 <body>
 
 <form action="signup.php" method="post">
-  First Name:<br>
+  Prenume:<br>
   <input type="text" name="first_name" required>
   <br>
-  Last Name:<br>
+  Nume:<br>
   <input type="text" name="last_name" required>
   <br>
   Email:<br>
   <input type="email" name="email" required>
   <br>
-  Password:<br>
+  Parola:<br>
   <input type="password" name="password" required>
   <br><br>
   <input type="submit" value="Submit">

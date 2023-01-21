@@ -66,11 +66,17 @@ if(isset($_POST['email']) && isset($_POST['password'])){
   Email:<br>
   <input type="email" name="email" required>
   <br>
-  Password:<br>
+  Parola:<br>
   <input type="password" name="password" required>
   <br><br>
-  <input type="submit" value="Submit">
-</form> 
+  <input type="submit" value="Intra in cont">
+</form>
+
+<form action="signup.php" method="post">
+<div style="text-align:center">
+  <button style="font-size:20px" href="signup.php">Nu ai cont inca? Inregistreaza-te aici: Sign up</button>
+</div>
+</form>
 
 </body>
 </html>
