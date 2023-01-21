@@ -8,6 +8,8 @@ body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
+/* de pe w3schools */
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -109,7 +111,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 3000); // se schimba imaginea odata la 5 secunde 
+  setTimeout(showSlides, 3000); // se schimba imaginea odata la 3 secunde 
 }
 </script>
 

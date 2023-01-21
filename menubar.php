@@ -12,7 +12,7 @@
 
 <body>
   <nav>
-    <ul style="list-style-type:none; display:flex; justify-content:right; text-align-last: right;">
+    <ul style="list-style-type:none; justify-content:right; text-align-last: right;">
       <li><a href="index.php">Acasa</a></li>
       <li><a href="despre.php">Despre</a></li>
       <li><a href="produse.php">Produse</a></li>

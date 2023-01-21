@@ -4,38 +4,37 @@ if(isset($_POST['email']) && isset($_POST['password'])){
     $password = $_POST['password'];
 
     if(filter_var($email, FILTER_VALIDATE_EMAIL) && strlen($password) >= 8){
-        //connect to database
+        //se conecteaza la baza de date
         $servername = "localhost";
         $username = "root";
         $password = "";
         $dbname = "proiect";
 
-        //create connection
+        //creaza conexiunea
         $conn = new mysqli($servername, $username, $password, $dbname);
 
-        //check connection
+        //verifica conexiunea
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
 
-        //prepare and bind
+        //ia parametrii si ii verifica in baza de date (email si parola)
         $stmt = $conn->prepare("SELECT email, password FROM users WHERE email = ?");
         $stmt->bind_param("s", $email);
 
-        //set parameters and execute
+        
         $stmt->execute();
 
         $result = $stmt->get_result();
 
         if($result->num_rows == 1) {
             $row = $result->fetch_assoc();
-            if(password_verify($password, $row['password'])) {
-                //password is correct, start a new session
+            if(password_verify($password, $row['password'])) 
+            {
                 session_start();
-                //store email in session
                 $_SESSION['email'] = $email;
-                //redirect to welcome page
-                header("Location: welcome.php");
+                header("Location: index.php");
+                //redirectioneaza la pagina home
                 exit;
             } else {
                 echo "Invalid email or password";
@@ -47,7 +46,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
         $conn->close();
     }
     else{
-        //invalid email or password
+        //sunt invalide amandoua
         echo "Invalid email or password";
     }
 }
@@ -71,6 +70,8 @@ if(isset($_POST['email']) && isset($_POST['password'])){
   <br><br>
   <input type="submit" value="Intra in cont">
 </form>
+
+<!-- buton pentru sign-up -->
 
 <form action="signup.php" method="post">
 <div style="text-align:center">

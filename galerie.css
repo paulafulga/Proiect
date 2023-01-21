@@ -2,7 +2,6 @@
     width: 80%;
     margin: 50px auto;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
     background-color: rgba(250,240,184,0.5);
     padding: 20px;
     border-radius: 10px;
@@ -39,5 +38,5 @@ img {
 }
 
 img:hover {
-    transform: scale(1.1);
+    transform: scale(2.5);
 }

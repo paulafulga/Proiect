@@ -6,46 +6,46 @@ include("menubar.php");
 
 
 <div class="image-section">
-    <h1>Our Products</h1>
+    <h1>Imagini cu produsele noastre</h1>
     <table>
         <tr>
-            <th>Product Image</th>
-            <th>Product Name</th>
-            <th>Description</th>
+            <th>IMAGINE</th>
+            <th>PRODUS</th>
         </tr>
         <tr>
-            <td><img src="Imagini/miere5.jpg" alt="Milk" style="width: 100px;"></td>
-            <td>Milk</td>
-            <td>Our milk is sourced from grass-fed cows and is free from preservatives and artificial flavors.</td>
+            <td><img src="Imagini/lapte1.jpg" style="width: 100px;"></td>
+            <td>Lapte dulce si batut</td>
         </tr>
         <tr>
-            <td><img src="Imagini/despre4.jpg" alt="Cheese" style="width: 100px;"></td>
-            <td>Cheese</td>
-            <td>Our cheese is made using traditional methods and is aged for a minimum of three months.</td>
+            <td><img src="Imagini/branza1.jpg" style="width: 100px;"></td>
+            <td>Seelectie variata de branzeturi</td>
         </tr>
         <tr>
-            <td><img src="Imagini/despre4.jpg" alt="Yogurt" style="width: 100px;"></td>
-            <td>Yogurt</td>
-            <td>Our yogurt is made with natural ingredients and is free from artificial sweeteners.</td>
+            <td><img src="Imagini/miere5.jpg" style="width: 100px;"></td>
+            <td>Borcane cu miere</td>
+        </tr>
+        <tr>
+            <td><img src="Imagini/gem1.jpg" style="width: 100px;"></td>
+            <td>Gemuri si dulceturi</td>
         </tr>
     </table>
-    <h1>Our Team</h1>
+    <h1>Imagini cu echipa de productie</h1>
     <table>
         <tr>
-            <th>Team Member Image</th>
-            <th>Team Member Name</th>
+            <th>IMAGINE</th>
+            <th>NUMELE ANGAJATULUI</th>
         </tr>
         <tr>
-            <td><img src="Imagini/despre3.jpg" alt="John" style="width: 100px;"></td>
-            <td>John</td>
+            <td><img src="Imagini/ionpopescu1.jpg" style="width: 100px;"></td>
+            <td>ION POPESCU</td>;
         </tr>
         <tr>
-            <td><img src="Imagini/despre1.jpg" alt="Susan" style="width: 100px;"></td>
-            <td>Susan</td>
+            <td><img src="Imagini/fermmier2.jpg" style="width: 100px;"></td>
+            <td>CRISTIAN DORU</td>
         </tr>
         <tr>
-            <td><img src="Imagini/despre2.jpg" alt="Jim" style="width: 100px;"></td>
-            <td>Jim</td>
+            <td><img src="Imagini/fermier3.jpg" style="width: 100px;"></td>
+            <td>PETRE IONESCU</td>
         </tr>
     </table>
 </div>

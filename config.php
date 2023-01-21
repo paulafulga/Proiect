@@ -4,10 +4,10 @@ $username = "root";
 $password = "";
 $db = "proiect";
 
-// Create connection
+// creaza conexiune la baza de date
 $conn = new mysqli($servername, $username, $password, $db);
 
-// Check connection
+// verifica conexiunea
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
